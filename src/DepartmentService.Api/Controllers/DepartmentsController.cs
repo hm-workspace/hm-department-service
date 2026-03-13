@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using DepartmentService.Utils.Common;
 using DepartmentService.InternalModels.DTOs;
 using DepartmentService.InternalModels.Entities;
@@ -6,6 +7,7 @@ using DepartmentService.Services;
 
 namespace DepartmentService.Api.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/departments")]
 public class DepartmentsController : ControllerBase
