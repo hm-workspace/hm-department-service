@@ -1,9 +1,10 @@
-﻿using System.Data;
+using System.Data;
 
 namespace DepartmentService.Data;
 
 public interface IDbConnectionFactory
 {
-    IDbConnection CreateConnection();
+    IDbConnection CreateConnection(string connectionName = "DefaultConnection");
 }
+
 
