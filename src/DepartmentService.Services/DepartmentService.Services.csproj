@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\DepartmentService.Repository\DepartmentService.Repository.csproj" />
+    <ProjectReference Include="..\DepartmentService.InternalModels\DepartmentService.InternalModels.csproj" />
+    <ProjectReference Include="..\DepartmentService.Utils\DepartmentService.Utils.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
