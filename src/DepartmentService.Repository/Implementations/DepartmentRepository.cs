@@ -4,11 +4,11 @@ using DepartmentService.InternalModels.Entities;
 
 namespace DepartmentService.Repository;
 
-public class DapperDepartmentRepository : IDepartmentRepository
+public class DepartmentRepository : IDepartmentRepository
 {
     private readonly IDbConnectionFactory _connectionFactory;
 
-    public DapperDepartmentRepository(IDbConnectionFactory connectionFactory)
+    public DepartmentRepository(IDbConnectionFactory connectionFactory)
     {
         _connectionFactory = connectionFactory;
     }
